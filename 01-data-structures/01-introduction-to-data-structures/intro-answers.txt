@@ -1,0 +1,36 @@
+** Explanation as to how the my application works **
+
+Everything is encompassed in the class "Line" so that it runs these functions when altering the list of people in the line.
+I created an attribute accessor so that I can access what I'm looking to add to my array which are members.
+For my line.rb file, I had the initialize function running first to generate the empty array in order to add people to the line.
+I created a join method with the parameter of person, so that whatever the parameter is will be added to the array.
+I then created the leave method with the person parameter again so that whatever parameter is entered will leave the array.
+  It accesses the index at which the person is located and deletes them and the outputs the string of the remaining array.
+I then created the front method which accesses the person at the front of the array.
+Then I created the middle method. Here I create the variable index which identifies the middle of the array by dividing the
+  indices by 2 and rounding down to the nearest whole number and then output the member at that index.
+The back method is similar to the front method except I'm just locating the back of the array instead of the front.
+The search method allows us to find a person at a specific point in the array. We create a person_index variable which
+  we will use to identify if the index actually exists. Then we use the index method defined in our last line as long as the
+  index exists.
+Then our final method index will return the person's index which is utilized by the other methods.
+
+
+1. How does your data structure allow developers to access and manipulate the data?
+
+  My data structure allows developers every option to sort, add, delete, and find members in a line by sorting them in an array.
+  These methods in turn can alter the dynamic of the array.
+
+2. If a developer wanted to find a specific element in your data structure, how would you search for it?
+
+  You would be able to use Line.search(person) in order to find a specific person by using the index(person) method. Also
+  you could use the screen.rb methods where it identifies the specific coordinates in which it will return the elements of the
+  array at those coordinates.
+
+3. What other real-world data can each structure represent?
+
+  This is applicable to almost anything where there is a line. For example, You're at the grocery store waiting and there's a
+  long line. There's always a front, back, and middle and the line can change. Say someone new enters the line or someone
+  forgot something and has to leave the line, or the person at the front finishes paying for everything.
+  Then the dynamic of the line changes and the array is different. You can also apply this to amusement parks or movie lines or
+  basically anything where people are waiting in a line.
