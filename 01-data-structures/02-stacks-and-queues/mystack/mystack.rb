@@ -13,7 +13,7 @@ class MyStack
 
   def pop
     temp = @stack.last
-    @stack.delete_at(stack.length - 1)
+    @stack.delete_at(@stack.length - 1)
     self.top = @stack.last
     temp
   end
