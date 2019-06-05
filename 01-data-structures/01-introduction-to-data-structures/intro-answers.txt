@@ -1,4 +1,4 @@
-** Explanation as to how the my application works **
+** Explanation as to how the Line application works **
 
 Everything is encompassed in the class "Line" so that it runs these functions when altering the list of people in the line.
 I created an attribute accessor so that I can access what I'm looking to add to my array which are members.
@@ -34,3 +34,26 @@ Then our final method index will return the person's index which is utilized by 
   forgot something and has to leave the line, or the person at the front finishes paying for everything.
   Then the dynamic of the line changes and the array is different. You can also apply this to amusement parks or movie lines or
   basically anything where people are waiting in a line.
+
+
+
+  ** Explanation as to how the Screen application works **
+
+The screen.rb file is initialized with a width and height for the matrix that contains the coordinates for the pixels.
+Then the insert method is defined which inserts the coordinates assigned to x and y so long as they exist and are not
+  greater than the height or width and are not less than 0.
+The pixel.rb file works with the screen.rb file in order to add the correct color so long as it exists and doesn't exceed
+  the normal bounds of 0 or 255.
+
+  1. How does your data structure allow developers to access and manipulate the data?
+
+    The data assigned these coordinates and colors allows the user to manipulate the x and y coordinates in order to modify the
+      data while also assigning them the rgb color values.
+
+  2. If a developer wanted to find a specific element in your data structure, how would you search for it?
+
+    You would use the at() method from the screen.rb file. It correctly identifies the element at the given coordinates.
+
+  3. What other real-world data can each structure represent?
+
+    This structure can be used in any case where there is a grid or graph of data that is located at specific coordinates.

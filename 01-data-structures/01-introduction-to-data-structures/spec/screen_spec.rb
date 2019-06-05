@@ -1,4 +1,6 @@
-require_relative 'screen'
+include RSpec
+
+require_relative '../screen/screen'
 
 RSpec.describe Screen, type: Class do
   let(:screen) { Screen.new(10, 10) }
