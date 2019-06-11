@@ -22,13 +22,15 @@ class OpenAddressing
       if new_index == -1
         puts "array full resizing"
         self.resize
-        return self[key] = value
+        # return self[key] = value
       else
         @items[new_index] = new_node
       end
+      # puts "testB"
     end
     @total_nodes += 1
-    puts i
+    puts @total_nodes
+    # puts "testA"
   end
 
   def [](key)
@@ -76,7 +78,7 @@ class OpenAddressing
     temp_array.each do |item|
       if item != nil
         self[item.key] = item.value
-        puts item
+        # puts item
       end
     end
   end
