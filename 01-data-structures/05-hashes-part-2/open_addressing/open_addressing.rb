@@ -28,6 +28,7 @@ class OpenAddressing
       end
     end
     @total_nodes += 1
+    puts i
   end
 
   def [](key)
@@ -75,6 +76,7 @@ class OpenAddressing
     temp_array.each do |item|
       if item != nil
         self[item.key] = item.value
+        puts item
       end
     end
   end
